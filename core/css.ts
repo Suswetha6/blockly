@@ -141,6 +141,7 @@ let content = `
   border-color: inherit;
 }
 
+/* The following styles are commented out because they are not used in core:
 .blocklyDropDownButton {
   display: inline-block;
   float: left;
@@ -152,6 +153,7 @@ let content = `
   transition: box-shadow .1s;
   cursor: pointer;
 }
+*/
 
 .blocklyArrowTop {
   border-top: 1px solid;
@@ -167,6 +169,7 @@ let content = `
   border-color: inherit;
 }
 
+/* The following styles are commented out because they are not used in core:
 .blocklyResizeSE {
   cursor: se-resize;
   fill: #aaa;
@@ -181,6 +184,7 @@ let content = `
   stroke: #515A5A;
   stroke-width: 1;
 }
+*/
 
 .blocklyHighlightedConnectionPath {
   fill: none;
@@ -211,16 +215,18 @@ let content = `
   pointer-events: auto;
 }
 
-  /* Changes cursor on mouse down. Not effective in Firefox because of
-     https://bugzilla.mozilla.org/show_bug.cgi?id=771241 */
+/* Changes cursor on mouse down. Not effective in Firefox because of
+   https://bugzilla.mozilla.org/show_bug.cgi?id=771241 */
 .blocklyDraggable:active {
   cursor: grabbing;
   cursor: -webkit-grabbing;
 }
 
+/* The following style is commented out because it is not used in core:
 .blocklyDragging.blocklyDraggingDelete {
   cursor: url("<<<PATH>>>/handdelete.cur"), auto;
 }
+*/
 
 .blocklyDragging>.blocklyPath,
 .blocklyDragging>.blocklyPathLight {
@@ -277,9 +283,11 @@ let content = `
   cursor: inherit;
 }
 
+/* The following style is commented out because it is not used in core:
 .blocklyHidden {
   display: none;
 }
+*/
 
 .blocklyFieldDropdown:not(.blocklyHidden) {
   display: block;
